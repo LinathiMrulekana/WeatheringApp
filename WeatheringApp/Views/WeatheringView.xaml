@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:service="clr-namespace:WeatheringApp.Models.Service"
+             x:Class="WeatheringApp.WeatheringView" 
+             Title="Weather"
+             BackgroundImageSource="weatherimage.png">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+
+            <StackLayout Grid.Row="0" Orientation="Horizontal">
+                <Label
+                   Text="Temp: "
+                    TextColor="Black"
+                   FontSize="Large" />
+
+                <Label
+                   Text="{Binding Weather.main.temp}"
+                    TextColor="Black"
+                   FontSize="Large" />
+
+                <Label
+                   Text="Degrees"
+                    TextColor="Black"
+                   FontSize="Large" />
+            </StackLayout>
+
+            <StackLayout  Grid.Row="1" Orientation="Horizontal">
+                <Label
+                   Text="Feels like: "
+                    TextColor="Black"
+                   FontSize="Large" />
+
+                <Label 
+                   Text="{Binding Weather.main.feels_like}"
+                    TextColor="Black"
+                   FontSize="Large" />
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Orientation="Horizontal">
+                <Label
+                   Text="Min temp: "
+                    TextColor="Black"
+                   FontSize="Large" />
+                <Label 
+                   Text="{Binding Weather.main.temp_min}" 
+                    TextColor="Black"
+                   FontSize="Large" />
+                <Label
+                   Text="Degrees"
+                    TextColor="Black"
+                   FontSize="Large" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Orientation="Horizontal">
+                <Label
+                   Text="Max temp: "
+                    TextColor="Black"
+                   FontSize="Large" />
+                <Label                  
+                   Text="{Binding Weather.main.temp_max}"
+                    TextColor="Black"
+                   FontSize="Large" />
+                <Label
+                   Text="Degrees"
+                    TextColor="Black"
+                   FontSize="Large" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="4" Orientation="Horizontal">
+                <Label
+                   Text="Pressure: "
+                    TextColor="Black"
+                   FontSize="Large" />
+                <Label 
+                   Text="{Binding Weather.main.pressure}"
+                    TextColor="Black"
+                   FontSize="Large" />
+               
+            </StackLayout>
+
+            <StackLayout  Grid.Row="5" Orientation="Horizontal">
+                <Label
+                   Text="Humidity: "
+                    TextColor="Black"
+                   FontSize="Large" />
+                <Label 
+                   Text="{Binding Weather.main.humidity}"
+                    TextColor="Black"
+                   FontSize="Large" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="6" Orientation="Horizontal">
+                <Label
+                   Text="Clouds: "
+                    TextColor="Black"
+                   FontSize="Large" />
+                <Label 
+                   Text="{Binding Weather.clouds.all}"
+                    TextColor="Black"
+                   FontSize="Large" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="7" Orientation="Horizontal" >
+                <Label
+                   Text="Speed: "
+                   TextColor="Black"
+                   FontSize="Large" />
+                <Label 
+                   Text="{Binding Weather.wind.speed}"
+                    TextColor="Black"
+                   FontSize="Large" />
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
