@@ -7,6 +7,7 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="40"/>
@@ -15,9 +16,12 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
+            <Label Text="CURRENT WEATHER"
+                   TextColor="WhiteSmoke"
+                   FontSize="40"
+                   FontAttributes="Bold"/>
 
-
-            <StackLayout Grid.Row="0" Orientation="Horizontal">
+            <StackLayout Grid.Row="1" Orientation="Horizontal">
                 <Label
                    Text="Temp: "
                     TextColor="Black"
@@ -34,7 +38,7 @@
                    FontSize="Large" />
             </StackLayout>
 
-            <StackLayout  Grid.Row="1" Orientation="Horizontal">
+            <StackLayout  Grid.Row="2" Orientation="Horizontal">
                 <Label
                    Text="Feels like: "
                     TextColor="Black"
@@ -47,7 +51,7 @@
 
             </StackLayout>
 
-            <StackLayout Grid.Row="2" Orientation="Horizontal">
+            <StackLayout Grid.Row="3" Orientation="Horizontal">
                 <Label
                    Text="Min temp: "
                     TextColor="Black"
@@ -62,7 +66,7 @@
                    FontSize="Large" />
             </StackLayout>
 
-            <StackLayout Grid.Row="3" Orientation="Horizontal">
+            <StackLayout Grid.Row="4" Orientation="Horizontal">
                 <Label
                    Text="Max temp: "
                     TextColor="Black"
@@ -77,7 +81,7 @@
                    FontSize="Large" />
             </StackLayout>
 
-            <StackLayout Grid.Row="4" Orientation="Horizontal">
+            <StackLayout Grid.Row="5" Orientation="Horizontal">
                 <Label
                    Text="Pressure: "
                     TextColor="Black"
@@ -89,7 +93,7 @@
                
             </StackLayout>
 
-            <StackLayout  Grid.Row="5" Orientation="Horizontal">
+            <StackLayout  Grid.Row="6" Orientation="Horizontal">
                 <Label
                    Text="Humidity: "
                     TextColor="Black"
@@ -100,7 +104,7 @@
                    FontSize="Large" />
             </StackLayout>
 
-            <StackLayout Grid.Row="6" Orientation="Horizontal">
+            <StackLayout Grid.Row="7" Orientation="Horizontal">
                 <Label
                    Text="Clouds: "
                     TextColor="Black"
@@ -111,7 +115,7 @@
                    FontSize="Large" />
             </StackLayout>
 
-            <StackLayout Grid.Row="7" Orientation="Horizontal" >
+            <StackLayout Grid.Row="8" Orientation="Horizontal" >
                 <Label
                    Text="Speed: "
                    TextColor="Black"
@@ -121,7 +125,6 @@
                     TextColor="Black"
                    FontSize="Large" />
             </StackLayout>
-
         </Grid>
     </ContentPage.Content>
 </ContentPage>

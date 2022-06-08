@@ -5,6 +5,6 @@
     android:TabbedPage.ToolbarPlacement="Bottom">
 
     <weatheringapp:WeatheringView/>
-    <weatheringapp:WeatheringHistoryView/>
+   
 
 </TabbedPage>

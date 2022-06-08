@@ -11,6 +11,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Services\WeatheringDatabase.cs" />
+    <Compile Remove="Views\WeatheringHistoryView.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\WeatheringHistoryView.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
@@ -20,9 +29,6 @@
   <ItemGroup>
     <Compile Update="Views\WeatheringView.xaml.cs">
       <DependentUpon>WeatheringView.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\WeatheringHistoryView.xaml.cs">
-      <DependentUpon>WeatheringHistoryView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

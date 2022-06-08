@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Weathering.Services;
-using WeatheringApp.Models;
 using WeatheringApp.Models.Service;
-using WeatheringApp.Services;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -32,7 +28,7 @@ namespace WeatheringApp.ViewModels
             _newWeatherCommand ?? (_newWeatherCommand = new Command(PersistedWeatherCommand));
 
 
-        public async void PersistedWeatherCommand()
+       public async void PersistedWeatherCommand()
         {
             await GetPersistedWeather();
         }
@@ -49,9 +45,9 @@ namespace WeatheringApp.ViewModels
                 Models.Weather dbWeather = new Models.Weather();
                 dbWeather.Date = DateTime.Now;
                // dbWeather.Weather = weather.weather;
-                var database = WeatheringDatabase.Instance;
+               // var database = WeatheringDatabase.Instance;
 
-                database.SaveWeather(dbWeather);
+                //database.SaveWeather(dbWeather);
             }
             else
             {

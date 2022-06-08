@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using WeatheringApp.Models;
-using WeatheringApp.Services;
 
 namespace WeatheringApp.ViewModels
 {
@@ -19,11 +18,11 @@ namespace WeatheringApp.ViewModels
             }
         }
 
-        public void Refresh()
+      /*  public void Refresh()
         {
                var database = WeatheringDatabase.Instance;
               weathering = database.GetWeather();
-        }
+        }*/
 
 
     }
